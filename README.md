@@ -1,22 +1,49 @@
-# CarLocation - Sistema de Gerenciamento de Carros
+# CarLocation - Sistema de Locação de Carros
 
-## Descrição
-Este é um simples sistema de gerenciamento de carros em Java, utilizando a interface gráfica do JOptionPane para interação com o usuário. O programa exibe uma lista de carros disponíveis com informações detalhadas, como nome, velocidade máxima, cor, marca, importado, valor e tipo de combustível.
+## Descrição do Projeto
 
-## Instruções de Uso
-1. Execute o programa Java chamado `fonte.java`.
-2. Uma caixa de diálogo perguntará se você gostaria de ver os carros disponíveis. Selecione "Sim" para visualizar a lista de carros.
-3. Uma nova caixa de diálogo será exibida, mostrando os carros disponíveis com detalhes como nome, velocidade máxima, cor, marca, importado, valor e tipo de combustível.
-4. Se o usuário optar por ver os carros e, em seguida, indicar que gostou de algum carro, o programa pode ser modificado para incluir ações específicas para essa situação.
+O projeto **CarLocation** é um sistema simples de locação de carros, implementado em Java. Ele permite visualizar uma lista de carros disponíveis, escolher um carro e verificar se o cliente gostou do veículo.
 
-## Estrutura do Código
-- `Car.java`: Definição da classe `Car` com atributos e um construtor para representar um carro.
-- `fonte.java`: Programa principal que cria instâncias da classe `Car` e exibe uma lista de carros usando `JOptionPane`.
+## Estrutura do Projeto
 
-## Exemplo de Uso
-```java
-Car carro1 = new Car("Fusca", 120, "Azul", "Volkswagen", false, 20000.0, "Gasolina");
-Car carro2 = new Car("Civic", 180, "Prata", "Honda", false, 50000.0, "Etanol");
-Car carro3 = new Car("Mustang", 250, "Vermelho", "Ford", true, 80000.0, "Gasolina");
-Car carro4 = new Car("Gol", 130, "Branco", "Volkswagen", false, 25000.0, "Flex");
-Car carro5 = new Car("Corolla", 170, "Preto", "Toyota", false, 55000.0, "Gasolina");
+### 1. Classe `Car`
+
+A classe `Car` representa a estrutura de um carro e possui os seguintes atributos:
+
+- `nome` (String): Nome do carro.
+- `velocidadeMax` (int): Velocidade máxima do carro em km/h.
+- `cor` (String): Cor do carro.
+- `marca` (String): Marca do carro.
+- `importado` (boolean): Indica se o carro é importado (true) ou nacional (false).
+- `valor` (double): Valor do carro em reais.
+- `combustivel` (String): Tipo de combustível utilizado pelo carro.
+- `emprestado` (boolean): Indica se o carro está emprestado no momento (true) ou disponível (false).
+
+A classe possui um construtor para inicializar os atributos.
+
+### 2. Classe `fonte`
+
+A classe `fonte` contém o método `main` que serve como ponto de entrada do programa. Nela são criados cinco objetos do tipo `Car`, representando diferentes carros disponíveis para locação. O usuário é então questionado se deseja visualizar a lista de carros e, caso afirmativo, é exibida a lista. Após a visualização, o usuário pode indicar se gostou de algum carro.
+
+## Como Executar o Programa
+
+O programa é executado a partir da classe `fonte`. Ao ser executado, ele exibe uma janela de diálogo perguntando se o usuário gostaria de ver os carros disponíveis. Se a resposta for afirmativa, a lista de carros é exibida. Em seguida, o usuário pode indicar se gostou de algum carro.
+
+## Requisitos
+
+- Java Development Kit (JDK) instalado.
+
+## Contribuição
+
+Contribuições são bem-vindas! Se você identificar melhorias ou correções que podem ser feitas no código, sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## Autores
+
+- [Seu Nome]
+
+## Licença
+
+Este projeto está licenciado sob a Licença MIT - consulte o arquivo [LICENSE](LICENSE) para obter detalhes.
+
+---
+
