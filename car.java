@@ -8,9 +8,10 @@ class Car {
     boolean importado;
     double valor;
     String combustivel;
+    boolean emprestado;
 
     
-    public Car(String nome, int velocidadeMax, String cor, String marca, boolean importado, double valor, String combustivel) {
+    public Car(String nome, int velocidadeMax, String cor, String marca, boolean importado, double valor, String combustivel, boolean emprestado) {
         this.nome = nome;
         this.velocidadeMax = velocidadeMax;
         this.cor = cor;
@@ -18,5 +19,6 @@ class Car {
         this.importado = importado;
         this.valor = valor;
         this.combustivel = combustivel;
+        this.emprestado = emprestado;
     }
 }

@@ -4,12 +4,12 @@ import javax.swing.JOptionPane;
 
 public class fonte {
     public static void main(String[] args) {
-        Car carro1 = new Car("Fusca", 120, "Azul", "Volkswagen", false, 20000.0, "Gasolina");
-        Car carro2 = new Car("Civic", 180, "Prata", "Honda", false, 50000.0, "Etanol");
-        Car carro3 = new Car("Mustang", 250, "Vermelho", "Ford", true, 80000.0, "Gasolina");
-        Car carro4 = new Car("Gol", 130, "Branco", "Volkswagen", false, 25000.0, "Flex");
-        Car carro5 = new Car("Corolla", 170, "Preto", "Toyota", false, 55000.0, "Gasolina");
-
+        Car carro1 = new Car("Fusca", 120, "Azul", "Volkswagen", false, 20000.0, "Gasolina", false);
+        Car carro2 = new Car("Civic", 180, "Prata", "Honda", false, 50000.0, "Etanol", false);
+        Car carro3 = new Car("Mustang", 250, "Vermelho", "Ford", true, 80000.0, "Gasolina", true);
+        Car carro4 = new Car("Gol", 130, "Branco", "Volkswagen", false, 25000.0, "Flex", false);
+        Car carro5 = new Car("Corolla", 170, "Preto", "Toyota", false, 55000.0, "Gasolina", false);
+        
         
         String mensagem = "Temos esses carros:\n\n" +
                 "1. " + carro1.nome + "\n" +
