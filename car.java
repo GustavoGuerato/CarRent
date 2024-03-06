@@ -1,18 +1,18 @@
 package CarLocation;
 
 class Car {
-    String nome;
-    int velocidadeMax;
-    String cor;
-    String marca;
-    boolean importado;
-    double valor;
-    String combustivel;
-    boolean emprestado;
-    String cambio;
-    int numeroPortas;
-    int ano;
-    String placa;
+    private String nome;
+    private int velocidadeMax;
+    private String cor;
+    private String marca;
+    private boolean importado;
+    private double valor;
+    private String combustivel;
+    private boolean emprestado;
+    private String cambio;
+    private int numeroPortas;
+    private int ano;
+    private String placa;
 
     public String getNome() {
         return nome;
