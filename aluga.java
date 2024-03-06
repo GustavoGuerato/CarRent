@@ -1,6 +1,7 @@
 package CarLocation;
 
 
+
 public class aluga {
     private String carro;
     private String cliente;
@@ -93,9 +94,5 @@ public class aluga {
             return false;
         return true;
     }
-
-
-    
-    
 
 }
