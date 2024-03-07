@@ -13,6 +13,8 @@ class Car {
     private int numeroPortas;
     private int ano;
     private String placa;
+    private int combustivelMax;
+    private short id;
 
     public String getNome() {
         return nome;
@@ -110,12 +112,30 @@ class Car {
         this.placa = placa;
     }
 
+    public int getCombustivelMax() {
+        return combustivelMax;
+    }
+
+    public void setCombustivelMax(int combustivelMax) {
+        this.combustivelMax = combustivelMax;
+    }
+
+    public short getId() {
+        return id;
+    }
+
+    public void setId(short id) {
+        this.id = id;
+    }
+
+    
+
     @Override
     public String toString() {
         return "Car [nome=" + nome + ", velocidadeMax=" + velocidadeMax + ", cor=" + cor + ", marca=" + marca
                 + ", importado=" + importado + ", valor=" + valor + ", combustivel=" + combustivel + ", emprestado="
                 + emprestado + ", cambio=" + cambio + ", numeroPortas=" + numeroPortas + ", ano=" + ano + ", placa="
-                + placa + "]";
+                + placa + ", combustivelMax=" + combustivelMax + ", id=" + id + "]";
     }
 
     @Override
@@ -123,6 +143,7 @@ class Car {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((placa == null) ? 0 : placa.hashCode());
+        result = prime * result + id;
         return result;
     }
 
@@ -140,7 +161,11 @@ class Car {
                 return false;
         } else if (!placa.equals(other.placa))
             return false;
+        if (id != other.id)
+            return false;
         return true;
     }
+
+    
 
 }
