@@ -1,5 +1,7 @@
 package CarLocation;
 
+import javax.swing.JOptionPane;
+
 class Car {
     private String nome;
     private int velocidadeMax;
@@ -128,7 +130,10 @@ class Car {
         this.id = id;
     }
 
-    
+    public void exibirStatusEmprestimo() {
+        String mensagem = emprestado ? "O carro está emprestado" : "O carro não está emprestado";
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
 
     @Override
     public String toString() {
